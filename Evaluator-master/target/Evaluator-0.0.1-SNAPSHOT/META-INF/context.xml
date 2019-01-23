@@ -1,0 +1,10 @@
+<Context>
+
+  <Resource name="jdbc/postgres" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="30" maxWait="10000"
+               username="yibrahim" password="Postgres20!5" 
+               driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://postgres2.d5.mpi-inf.mpg.de:5432/yibrahim"
+                accessToUnderlyingConnectionAllowed="true"/>
+
+</Context>

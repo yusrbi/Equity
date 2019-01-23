@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<title>QKB- ERROR</title>
+</head>
+<h:body>
+	<ui:composition template="resources/template/commonLayout.xhtml">
+
+
+		<ui:define name="content">
+			<h2>Error</h2>
+			<h:outputText value="Error Code: #{errorHandler.statusCode}"></h:outputText>
+			<br />
+			<h:outputText value="Error Desscription: #{errorHandler.message}"></h:outputText>
+			<br />
+			<h:outputText value="Exception Type: #{errorHandler.exceptionType}"></h:outputText>
+			<br />
+			<h:outputText value="Exception Class: #{errorHandler.exception}"></h:outputText>
+			<br />
+			<h:outputText value="Request URI : #{errorHandler.requestURI}"></h:outputText>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

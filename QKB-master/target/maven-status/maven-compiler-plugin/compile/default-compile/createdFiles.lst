@@ -1,0 +1,10 @@
+model/Class_.class
+loader/ObjectNotFoundException.class
+utils/JSONReader.class
+loader/QKBLoader.class
+model/InvalidQuantityException.class
+model/Unit.class
+model/Measure.class
+model/Quantity.class
+controller/QuantityController.class
+controller/ErrorHandler.class

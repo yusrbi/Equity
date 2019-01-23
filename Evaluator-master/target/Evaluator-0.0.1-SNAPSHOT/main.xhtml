@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+
+	<f:metadata>
+		<f:viewParam name="user" value="#{user.user_name}" />
+		<f:viewAction action="#{evaluator.checkLogin}" />
+	</f:metadata>
+	<ui:composition template="resources/template/commonLayout.xhtml">
+
+
+		<ui:define name="content">
+			<h2>
+				Hello
+				<h:outputText id="username" value="#{user.user_name}"></h:outputText>
+				!
+			</h2>
+			<h:panelGrid rendered="#{evaluator.empty_content}">
+			<h3> No more Tables to Evaluate!</h3>
+			</h:panelGrid>
+			
+			<h:panelGrid rendered="#{not evaluator.empty_content}">
+				<h3>
+					Experiment Name:
+					<h:outputText id="exp_id" value="#{document.experiment_id}"
+						escape="false"></h:outputText>
+					<br />
+					<h:outputText id="doc" value="#{document.title}" escape="false"></h:outputText>
+				</h3>
+			</h:panelGrid>
+			<h:form rendered="#{not evaluator.empty_content}">
+				<h:panelGrid>
+					<p>
+						<h:outputText id="doc_content" value="#{document.content_html}"
+							escape="false"></h:outputText>
+					</p>
+
+					<div class="table-responsive" >
+						<h:outputText id="table_content" value="#{table.table_html}"
+							escape="false"></h:outputText>
+					</div>
+
+					<h:commandButton value="submit" type="submit"
+						action="#{evaluator.submit}" />
+					<h:commandButton value="skip" type="submit"
+						action="#{evaluator.skip}" />
+					<h:commandButton value="close" type="submit"
+						action="#{evaluator.skip_close}" />
+				</h:panelGrid>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+
+
+</h:body>
+
+</html>

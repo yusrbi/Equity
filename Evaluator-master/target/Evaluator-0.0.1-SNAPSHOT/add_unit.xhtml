@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+
+	<f:metadata>
+		<f:viewParam name="user" value="#{user.user_name}" />
+		<f:viewAction action="#{evaluator.checkLogin}" />
+	</f:metadata>
+	<ui:composition template="resources/template/commonLayout.xhtml">
+
+
+		<ui:define name="content">
+		<h2>
+				Hello
+				<h:outputText id="username" value="#{user.user_name}"></h:outputText>
+				!
+			</h2>
+			<h2>Insert a new Unit</h2>
+			<h:panelGrid>
+
+			</h:panelGrid>
+
+
+			<h:form>
+				<h:panelGrid>
+
+					Unit Name:
+					<h:inputText id="name" value="#{unit.name}" required="true" 	label="Name" >
+					</h:inputText>
+					Freebase ID: 
+					<h:inputText id="freebase_id" value="#{unit.freebase_id}" label="freebase_id" >
+					</h:inputText>
+					Wikipedia ID:
+						<h:inputText id="wikipedia_id" value="#{unit.wikipedia_id}" label="wikipedia_id" >
+					</h:inputText>
+					Wikipedia Title:
+						<h:inputText id="wikipedia_title" value="#{unit.wikipedia_title}" label="wikipedia_title" >
+					</h:inputText>
+					Key:
+						<h:inputText id="key" value="#{unit.key}" required="false" 	label="key" >
+					</h:inputText>
+					
+					Unit Dimension: 
+					<h:selectOneMenu value="#{unit.dimension}">
+						<f:selectItems value="#{dimension.all_dimensions}" />
+					</h:selectOneMenu>
+					unit Data Type:
+					<h:selectOneMenu value="#{unit.data_type}">
+						<f:selectItems value="#{data_type.all_data_types}" />
+					</h:selectOneMenu>
+					Unit Aliases 
+					<h:inputTextarea id="aliases" value="#{unit.aliases}" required="true" 	label="aliases" >
+					</h:inputTextarea>
+
+					<h:commandButton value="add" type="submit"
+						action="#{evaluator.addUnit}" />
+				</h:panelGrid>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+
+
+</h:body>
+
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<f:metadata>	
+		<f:viewParam name="id" value="#{quantity.id}" />	
+		 <f:event type="preRenderView" listener="#{quantity_controler.load_quantity}" />
+	</f:metadata>
+	<ui:composition template="resources/template/commonLayout.xhtml">
+
+
+		<ui:define name="content">
+			<h2>
+				QKB : Quantity Information Page
+			</h2>
+		<h:panelGrid rendered="#{quantity_controler.empty_content}"  columns="1" border="0"
+   cellpadding="100" cellspacing="10">
+   <h:outputText id="Error_MSG" value=" Please use a valid Quantity URL Params!"
+						escape="false"></h:outputText>
+  
+   </h:panelGrid>
+			<h:panelGrid rendered="#{not quantity_controler.empty_content}"  columns="2" border="5"
+   cellpadding="40" cellspacing="10">
+  					 Quantity ID:	<h:outputText id="id" value="#{quantity.id}"
+						escape="false"></h:outputText>
+					<br />
+					Class Name:	<h:outputText id="class" value="#{quantity.class_}"
+						escape="false"></h:outputText>
+					<br />
+					Measure Name:		<h:outputText id="dimension_name" value="#{quantity.measure.name}"
+						escape="false"></h:outputText>
+					<br />
+					Unit Name:	<h:outputText id="unit_name" value="#{quantity.unit.name}"
+						escape="false"></h:outputText>
+
+					<br />
+					Value:	<h:outputText id="value" value="#{quantity.value}"
+						escape="false"></h:outputText>
+					<br />
+					Base Unit Conversion factor:	<h:outputText id="si_unit" value="#{quantity.unit.si_conversion}"
+						escape="false"></h:outputText>
+					<br />
+					Unit Wikipedia Title: <h:outputText id="unit_wiki_title" value="#{quantity.unit.wikipedia_title}"
+						escape="false"></h:outputText>
+						<br />
+					Unit Freebase Identifier:	<h:outputText id="unit_fb_id" value="#{quantity.unit.freebase_id}"
+						escape="false"></h:outputText>
+						<br />						
+					Measure Wikipedia Title:	<h:outputText id="dimension_wiki_title" value="#{quantity.measure.wikipedia_title}"
+						escape="false"></h:outputText>
+						<br />
+					Measure Freebase Identifier: <h:outputText id="dimension_fb_id" value="#{quantity.measure.freebase_id}"
+						escape="false"></h:outputText>
+					
+			</h:panelGrid>
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

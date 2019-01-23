@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<f:metadata>
+		
+		<f:viewAction action="#{evaluator.load_unit}" />
+	</f:metadata>
+	<ui:composition template="resources/template/commonLayout.xhtml">
+
+
+		<ui:define name="content">
+			<h2>
+				QKB : Unit Information Page
+			</h2>
+		
+			<h:panelGrid rendered="#{not evaluator.empty_content}"  columns="2" border="5"
+   cellpadding="40" cellspacing="10">
+			
+					Unit Name:	<h:outputText id="unit_name" value="#{unit_info.unit_name}"
+						escape="false"></h:outputText>
+						
+
+					<br />
+					Class Name:	<h:outputText id="class" value="#{unit_info._class}"
+						escape="false"></h:outputText>
+					<br />
+					Unit Wikipedia Title: <h:outputText id="unit_wiki_title" value="#{unit_info.unit_wiki_title}"
+						escape="false"></h:outputText>
+						<br />
+						Unit Freebase Identifier:	<h:outputText id="unit_fb_id" value="#{unit_info.unit_fb_id}"
+						escape="false"></h:outputText>
+						<br />
+						Dimension Name:		<h:outputText id="dimension_name" value="#{unit_info.dimension_name}"
+						escape="false"></h:outputText>
+					<br />
+					Dimension Wikipedia Title:	<h:outputText id="dimension_wiki_title" value="#{unit_info.dimension_wiki_title}"
+						escape="false"></h:outputText>
+						<br />
+						Dimension Freebase Identifier: <h:outputText id="dimension_fb_id" value="#{unit_info.dimension_fb_id}"
+						escape="false"></h:outputText>
+					
+			</h:panelGrid>
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

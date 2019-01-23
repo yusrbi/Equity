@@ -1,0 +1,972 @@
+[
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "Temporal", 
+        "fb_id": "020_g", 
+        "name": "Calendar Date", 
+        "wiki_id": "7123", 
+        "wiki_title": "Calendar_date"
+    }, 
+    {
+        "UNECE_measure": "velocity, phase velocity, group velocity", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Instantaneous_velocity,Velocities,Rate_of_speed,Transverse_velocity,Velocity,Velocity_vector,Formula_for_velocity,First_temporal_derivative_of_displacement,Time-average_velocity", 
+        "class": "physical qunatity", 
+        "fb_id": "07ygz", 
+        "name": "Velocity", 
+        "wiki_id": "20491903", 
+        "wiki_title": "Velocity"
+    }, 
+    {
+        "UNECE_measure": "permittivity, permittivity of vacuum, (electric constant)", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Permittivities,Permitivity_of_Free_Space,Permativity,Absolute_permittivity,Electric_Permittivity,Permittivity_Constant,Electric_permittivity,Complex_permittivity,Electrical_permittivity,Permittivity_constant,Lossy_medium,Permissivity,Dielectric_function,Pe", 
+        "class": "physical qunatity", 
+        "fb_id": "0f3fr", 
+        "name": "Permittivity", 
+        "wiki_id": "53933", 
+        "wiki_title": "Permittivity"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Windspeed,Wind_speeds,Wind_Speed,Wind_velocity,Wind_speed,Speed_of_wind", 
+        "class": "physical qunatity", 
+        "fb_id": "015_jz", 
+        "name": "Wind speed", 
+        "wiki_id": "165198", 
+        "wiki_title": "Wind_speed"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Supp._\u2220,\u2221,Angulate,Oblique_angle,Negative_angle,Complementary_\u2220,\u29ab,Nonadjacent_angle,Supplementary_angle,Obtuse_angle,Plane_angle,Adjacent_angle_pair,Bow_Tie_angle,\u29a2,Coterminal_angles,\u29a9,Linear_pair_of_angles,Opposite_angles,Suplementary_angles,\u299b,\u29a8,\u00c1ngulo,\u29ac,", 
+        "class": "physical qunatity", 
+        "fb_id": "0mwc", 
+        "name": "Angle", 
+        "wiki_id": "1196", 
+        "wiki_title": "Angle"
+    }, 
+    {
+        "UNECE_measure": "capacitance", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Elastance,Electric_capacitance,Capacatence,Capacitence,Electrical_elastance,Self_capacitance,Nominal_capacity,Stray_capacitance,Transcapacitance,Capacitance,Self-capacitance,Electrical_capacitance", 
+        "class": "physical qunatity", 
+        "fb_id": "011ks6", 
+        "name": "Capacitance", 
+        "wiki_id": "140711", 
+        "wiki_title": "Capacitance"
+    }, 
+    {
+        "UNECE_measure": "luminance", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Luminance,Photometric_brightness,Cd/m\u00b2,Luminance_factor", 
+        "class": "physical qunatity", 
+        "fb_id": "04nfq", 
+        "name": "Luminance", 
+        "wiki_id": "18365", 
+        "wiki_title": "Luminance"
+    }, 
+    {
+        "UNECE_measure": "conductivity", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Specific conductance,Kohlrausch_bridge,Solution_conductivity,Conductivity_(electrolytic)", 
+        "class": "physical qunatity", 
+        "fb_id": "05zn843", 
+        "name": "Conductivity", 
+        "wiki_id": "22738815", 
+        "wiki_title": "Conductivity_(electrolytic)"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Electrical resistivity,Volume resistivity,Specific electrical resistance,Electroconductivity,Electrical_conductivity_of_metals,Siemens_per_metre,Impeditivity,Table_of_resistivity,Bloch\u2013Gruneisen_formula,El._Resistivity,Resistivity,Electrical_resistivity_&_", 
+        "class": "physical qunatity", 
+        "fb_id": "0gp1z", 
+        "name": "Electrical resistivity and conductivity", 
+        "wiki_id": "61580", 
+        "wiki_title": "Electrical_resistivity_and_conductivity"
+    }, 
+    {
+        "UNECE_measure": "radiant intensity", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Radiant_Intensity,Radiation_intensity,Radiant_intensity", 
+        "class": "physical qunatity", 
+        "fb_id": "04j10d", 
+        "name": "Radiant intensity", 
+        "wiki_id": "1215732", 
+        "wiki_title": "Radiant_intensity"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Electrical_Resistance,Resistance_in_Wires,Electric_resistnace,Electrical_resistance_and_conductance,Electrical_conductance,Resistance_(electronics),Electrical_resistance,Electrical_resistance_&_conductance,Resistance_(electricity),Resistance_(physics),Elec", 
+        "class": "physical qunatity", 
+        "fb_id": "0gp12", 
+        "name": "Electrical resistance and conductance", 
+        "wiki_id": "61577", 
+        "wiki_title": "Electrical_resistance_and_conductance"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Specific_fuel_consumption_(shaft_engine),Brake_specific_fuel_consumption,Break_Specific_Fuel_Consumption,Break-specific_fuel_consumption", 
+        "class": "physical qunatity", 
+        "fb_id": "041c50", 
+        "name": "Brake specific fuel consumption", 
+        "wiki_id": "30874007", 
+        "wiki_title": "Brake_specific_fuel_consumption"
+    }, 
+    {
+        "UNECE_measure": "magnetic flux", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Magnetic_Flux,Magnetic_flux", 
+        "class": "physical qunatity", 
+        "fb_id": "0hg89", 
+        "name": "Magnetic flux", 
+        "wiki_id": "65890", 
+        "wiki_title": "Magnetic_flux"
+    }, 
+    {
+        "UNECE_measure": "acceleration, acceleration of free fall, acceleration due to gravity", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Accelerated_motion,Accelerated_Motion,Accelerative,Centripetal_Acceleration,Sluthering,Accelleration,Tangential_acceleration,Exceleration,Acceleration,Deceleration,Instantaneous_acceleration,Accelerates,Second_temporal_derivative_of_displacement,Centripeta", 
+        "class": "physical qunatity", 
+        "fb_id": "0zl3", 
+        "name": "Acceleration", 
+        "wiki_id": "2443", 
+        "wiki_title": "Acceleration"
+    }, 
+    {
+        "UNECE_measure": "electric potential, potential difference, tension, voltage, electromotive force", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "067yp", 
+        "name": "Potential difference", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "angular frequency, pulsatance", 
+        "UNECE_sector": "Acoustics", 
+        "aliases": "Angular_speed,Angular_frequency,Angular_Frequency,Angular_rate,Pulsatance,Orbital_frequency,Radian_frequency", 
+        "class": "physical qunatity", 
+        "fb_id": "01ccq1", 
+        "name": "Angular frequency", 
+        "wiki_id": "199829", 
+        "wiki_title": "Angular_frequency"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "05d66h", 
+        "name": "Albedo", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Proper_force,Proper_acceleration,Coordinate_acceleration", 
+        "class": "physical qunatity", 
+        "fb_id": "03qccrf", 
+        "name": "Proper acceleration", 
+        "wiki_id": "8687911", 
+        "wiki_title": "Proper_acceleration"
+    }, 
+    {
+        "UNECE_measure": "specific volume, massic volume", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Specific_volume", 
+        "class": "physical qunatity", 
+        "fb_id": "06l2bj", 
+        "name": "Specific volume", 
+        "wiki_id": "2083906", 
+        "wiki_title": "Specific_volume"
+    }, 
+    {
+        "UNECE_measure": "length, breadth, height, thickness, radius, radius of curvature, cartesian coordinates, diameter, length of path, distance", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Breadth,Width,Lenght,Lengths,Length,Legnth", 
+        "class": "physical qunatity", 
+        "fb_id": "04psy", 
+        "name": "Length", 
+        "wiki_id": "18542", 
+        "wiki_title": "Length"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Thermal_intertia,Volumetric_heat_capacity,Thermal_Inertia,Volume_specific_heat_capacity,Thermal_inertia", 
+        "class": "physical qunatity", 
+        "fb_id": "0dwhl", 
+        "name": "Volumetric heat capacity", 
+        "wiki_id": "52827", 
+        "wiki_title": "Volumetric_heat_capacity"
+    }, 
+    {
+        "UNECE_measure": "luminous flux", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Luminous_power,Luminous_Flux,Luminous_flux", 
+        "class": "physical qunatity", 
+        "fb_id": "02s7nb", 
+        "name": "Luminous flux", 
+        "wiki_id": "581888", 
+        "wiki_title": "Luminous_flux"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Relative_Humidity,Relative_air_humidity,Relative_humidity,Percent_humidity", 
+        "class": "physical qunatity", 
+        "fb_id": "01gmcl", 
+        "name": "Relative humidity", 
+        "wiki_id": "223970", 
+        "wiki_title": "Relative_humidity"
+    }, 
+    {
+        "UNECE_measure": "electric charge, quantity of electricity, electric flux (flux of displacement)", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Positive_charge,Electric_polarity,Positively_charged,Positive_Charge,Negatively_charged,Electrically_neutral,Electric_Charge,Negative_charge,Electrification_by_friction,Negative_Charge,Positive_static_charge,Electrostatic_charge,Electrically_charged,Q_(ele", 
+        "class": "physical qunatity", 
+        "fb_id": "02nxz", 
+        "name": "Electric charge", 
+        "wiki_id": "9804", 
+        "wiki_title": "Electric_charge"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Magnetic_variation,Declinometer,GM_angle,Compass_variation,Magnetic_north,Variation_of_the_compass,Magnetic_variance,Variation_of_magnetic_needle,Grid_Magnetic_Angle,Magnetic_declination,Grid_magnetic_angle,Declination_of_a_Compass,Magnetic_Declination,Gri", 
+        "class": "physical qunatity", 
+        "fb_id": "01st55", 
+        "name": "Magnetic declination", 
+        "wiki_id": "308058", 
+        "wiki_title": "Magnetic_declination"
+    }, 
+    {
+        "UNECE_measure": "absorbed dose rate", 
+        "UNECE_sector": "Nuclear Reactions and Ionizing Radiations", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj5df", 
+        "name": "Absorbed dose rate", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj5c4", 
+        "name": "Ionizing radiation exposure", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "current density", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Current_3-vector,Volume_current,Electric_current_density,Current_density,Volume_Current", 
+        "class": "physical qunatity", 
+        "fb_id": "0dpk8b", 
+        "name": "Current density", 
+        "wiki_id": "5498706", 
+        "wiki_title": "Current_density"
+    }, 
+    {
+        "UNECE_measure": "surface tension", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Interfacial_surface_tension,Interfacial_tension,Surface_Tension,Interfacial_free_energy,Surface_tension,SUrface_Tension,Interface_tension", 
+        "class": "physical qunatity", 
+        "fb_id": "0swz_", 
+        "name": "Surface tension", 
+        "wiki_id": "113302", 
+        "wiki_title": "Surface_tension"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj58p", 
+        "name": "Molar energy", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "area", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Area_measure,Area,Area_formula,Areas_of_Basic_Shapes,Area_(geometry),Area_of_figure,Area_of_plane_region,Area_(mathematics)", 
+        "class": "physical qunatity", 
+        "fb_id": "0n0j", 
+        "name": "Area", 
+        "wiki_id": "1209", 
+        "wiki_title": "Area"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Dose_equivalent,Equivalent_dose,Radiation_weight_factor,Radiation_weighting_factor,Radiation_weighting_factors,Radiation_dose_equivalent", 
+        "class": "physical qunatity", 
+        "fb_id": "02jk_d", 
+        "name": "Equivalent dose", 
+        "wiki_id": "506276", 
+        "wiki_title": "Equivalent_dose"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04w34yf", 
+        "name": "Magnetic field", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Revenue,Net income,income,Capital expenditure,Profit,Price,Net Asset,Net Worth,Money,Trade Price,Value of Shares,Annual payroll,Cost,expenditure,Budget,Annual Fee,Expense,Dept,Credit,Credit limit,Cash,Liquidity,Loan,Profit,Loss,Origination Fee,Taxes,Saving", 
+        "class": "Monetary", 
+        "fb_id": "019_", 
+        "name": "Currency", 
+        "wiki_id": "5665", 
+        "wiki_title": "Currency"
+    }, 
+    {
+        "UNECE_measure": "time", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Time Europe,Time Asia,Time_Europe,Time_Atlantic,Time_Asia,Time_International,Time_Canada,TIME", 
+        "class": "Temporal", 
+        "fb_id": "07c_l", 
+        "name": "Time", 
+        "wiki_id": "30012", 
+        "wiki_title": "Time"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "FT Rate,Crime Rate Indexes,Rank/Rate,Spin Rate,Annual Death Rate ,Revenue Growth Rate,EPS Growth Rate,Forward Rate of Return,Asset Growth Rate,Unemployment Rate,Base Rate,Rate*,Daily Rate,Long-Term Capital Gain Rate,Short-Term Capital Gain Rate,Net Investm", 
+        "class": "Rate", 
+        "fb_id": "01x1q9", 
+        "name": "Rate", 
+        "wiki_id": "332372", 
+        "wiki_title": "Rate_(mathematics)"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Speed TV,Speed,Speedvision,SpeedVision,Speed_TV,Speed_Channel_Inc.,Speed_channel,Speed_(TV_network),Speed_(TV_channel),Speed2,SPEED_TV,Ray_Dunlap,Speed2_(Online_TV_network),SPEED_(TV_channel),Speed_HD,SPEED_Channel,SPEED_channel,Speed_Channel,SpeedTV,Speed", 
+        "class": "physical qunatity", 
+        "fb_id": "03m1lf", 
+        "name": "Speed", 
+        "wiki_id": "28748", 
+        "wiki_title": "Speed"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "EPA Combined mileage,EPA City mileage,EPA Fuel Economy combined,EPA Highway mileage,Combined,City,MPG,Highway", 
+        "class": "physical qunatity", 
+        "fb_id": "01y8w9", 
+        "name": "Fuel Efficiency", 
+        "wiki_id": "342520", 
+        "wiki_title": "Fuel_efficiency"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Population density,Density,Density (pop. per km2),Density (People. per km2),pop. per km2,people per sq. km,Population density (people per sq. km)", 
+        "class": "physical qunatity", 
+        "fb_id": "0ypnz", 
+        "name": "Population density", 
+        "wiki_id": "128608", 
+        "wiki_title": "Population_density"
+    }, 
+    {
+        "UNECE_measure": "power", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Power_(political),Power_(politics),Political_authority,Powercontrol_theory,Personal_power,Political_power,Power_(evil),Power_control_theory,Powah,Power_(philosophy),Social_power,Positions_of_power,Power_(social_and_political),Public_power,Powerful,Power_in", 
+        "class": "physical qunatity", 
+        "fb_id": "061ln", 
+        "name": "Power", 
+        "wiki_id": "24236", 
+        "wiki_title": "Power"
+    }, 
+    {
+        "UNECE_measure": "force, weight", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Sith_lightning,Force_(Star_Wars),Force-sensitives,Morichro,The_Force_(Star_Wars),Force_Push,Light_Side,Midi-chlorians,Force_Grip,Force_Spirit,Midi-chlorian,Battle_Meditation,Mind_Trick,Force-senstivity,Force-sensitivity,Midi-clorians,Force_Powers,Force_sen", 
+        "class": "physical qunatity", 
+        "fb_id": "02yc2", 
+        "name": "Force", 
+        "wiki_id": "10902", 
+        "wiki_title": "Force"
+    }, 
+    {
+        "UNECE_measure": "mass", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Liturgy_of_the_Word,Mass_(sacrament),Sunday_Mass,Communion_rite,Mass_(service),The_mass,A_church_service,Communion_service,Roman_Catholic_Mass,Introductory_Rites,Liturgy_of_the_Eucharist,-mas,Holy_Sacrifice_of_the_Mass,Mass_(Liturgy),Catholic_Masses,Liturg", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l", 
+        "name": "Mass", 
+        "wiki_id": "19048", 
+        "wiki_title": "Mass"
+    }, 
+    {
+        "UNECE_measure": "frequency", 
+        "UNECE_sector": "Periodic and related phenomena", 
+        "aliases": "Frequency_range,Wave_period,Frekvens,Frequency_(wave_motion),Periodic_time,Frequency_measurement,Period_(frequency),Frequency_band,Period_(physics),Oscillation_frequency,Frequency,Frequencies,Waveband", 
+        "class": "physical qunatity", 
+        "fb_id": "02x93", 
+        "name": "Frequency", 
+        "wiki_id": "10779", 
+        "wiki_title": "Frequency"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "0gj_9", 
+        "name": "Electrical conductance", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "energy density", 
+        "UNECE_sector": "Heat", 
+        "aliases": "KWh/Kg,Mass-Energy_Density,List_of_energy_densities,Volume_of_energy,Energy_Density,Volumetric_energy_density,Energy_densities,Energies_per_unit_mass,Energy_volume,Energy_density,Energy_of_explosives,Massic_energy,Fuel_value,MJ/L", 
+        "class": "physical qunatity", 
+        "fb_id": "05ggcb", 
+        "name": "Energy density", 
+        "wiki_id": "1610231", 
+        "wiki_title": "Energy_density"
+    }, 
+    {
+        "UNECE_measure": "moment of force, moment of a couple, torque", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Principle_of_moments,Rotation_moment,Force_moment,Lever_arm,Torques,Rotational_force,Moment_arm,Torqued,External_torque,The_Principle_Of_Moments,Torque/Proofs,Torque,Principal_of_moments,Torque_curve,Moment_of_force", 
+        "class": "physical qunatity", 
+        "fb_id": "07h3n", 
+        "name": "Torque", 
+        "wiki_id": "30400", 
+        "wiki_title": "Torque"
+    }, 
+    {
+        "UNECE_measure": "luminous intensity", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Luminous_Intensity,Luminous_intensity", 
+        "class": "physical qunatity", 
+        "fb_id": "01thsn", 
+        "name": "Luminous intensity", 
+        "wiki_id": "313418", 
+        "wiki_title": "Luminous_intensity"
+    }, 
+    {
+        "UNECE_measure": "angular acceleration", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Rotational_acceleration,Radian_per_second_squared,Angular_acceleration,\u33af,Angular_Acceleration", 
+        "class": "physical qunatity", 
+        "fb_id": "0hgl0", 
+        "name": "Angular acceleration", 
+        "wiki_id": "65929", 
+        "wiki_title": "Angular_acceleration"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Gravitational_field,Gravitational_Field,Newtonian_gravitational_field,Gravitational_fields,Gravitation_field", 
+        "class": "physical qunatity", 
+        "fb_id": "025rzkc", 
+        "name": "Gravitational field", 
+        "wiki_id": "174782", 
+        "wiki_title": "Gravitational_field"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Inductance_with_physical_symmetry,Mutual_Inductance,Magnetic_self-induction,Mutual_inductor,Magnetoelectric_induction,Self_inductance,Electric_mutual_induction,Coupled_inductors,Magnetic_mutual_induction,Mutual_inductance,Electrical_inductance,Self-inducta", 
+        "class": "physical qunatity", 
+        "fb_id": "015_85", 
+        "name": "Inductance", 
+        "wiki_id": "165146", 
+        "wiki_title": "Inductance"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Electrical_power,Electric_Power,Watt's_Law,Watt's_law,Electricity_supply_infrastructure,Electrical_Power,Sources_of_Power_Production,Electric_power,Wattage,Electricity_system", 
+        "class": "physical qunatity", 
+        "fb_id": "092g9s", 
+        "name": "Electric power", 
+        "wiki_id": "3270043", 
+        "wiki_title": "Electric_power"
+    }, 
+    {
+        "UNECE_measure": "heat capacity, entropy", 
+        "UNECE_sector": "Heat", 
+        "aliases": "Specific_heat,Heat_capacity,C_sub_p,Specific_heat_capacity,Heat_Capacity,Molecular_heat_capacity,Thermal_capacity,Specific_heats,Specific_Heat,Joule_per_kilogram-kelvin,Specific_heat_of_solids,Molecular_specific_heat,Specific_heat_at_STP,Freeze-out_tempera", 
+        "class": "physical qunatity", 
+        "fb_id": "01bl4n", 
+        "name": "Heat capacity", 
+        "wiki_id": "194227", 
+        "wiki_title": "Heat_capacity"
+    }, 
+    {
+        "UNECE_measure": "thermal resistance", 
+        "UNECE_sector": "Heat", 
+        "aliases": "Specific_thermal_resistance,Thermal_resistivity,Thermal_Resistance_Coefficent,Thermal_resistance,Thermal_resistance_in_electronics,Thermal_resistance_coefficent", 
+        "class": "physical qunatity", 
+        "fb_id": "0g5z4", 
+        "name": "Thermal resistance", 
+        "wiki_id": "26449752", 
+        "wiki_title": "Thermal_resistance"
+    }, 
+    {
+        "UNECE_measure": "volumic mass, mass density, density, mass concentration of B, amount of substance, concentration of B", 
+        "UNECE_sector": "Physical Chemistry and Molecular Physics", 
+        "aliases": "Number_of_moles,Chemical_amount,Amount_of_substance", 
+        "class": "physical qunatity", 
+        "fb_id": "038zyj", 
+        "name": "Amount of substance", 
+        "wiki_id": "759264", 
+        "wiki_title": "Amount_of_substance"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Cocatalyst,Catalytes,Co_catalyst,Catalysed,Catalyzed,Catalysing,Catalyser,Catalyzes,Catalyst,Catalyze,Co-catalyst,Catalyse,Catalytic_Agent,Cooperative_catalysis,Catalysis,Promoter_(catalysis),Catalytic_reaction,Katalysis,Catalytic_activity_concentration,Ca", 
+        "class": "physical qunatity", 
+        "fb_id": "01s9x", 
+        "name": "Catalysis", 
+        "wiki_id": "5914", 
+        "wiki_title": "Catalysis"
+    }, 
+    {
+        "UNECE_measure": "pressure, normal stress, shear stress, modulus of elasticity,shear modulus, modulus of rigidity, bulk modulus, modulus of compression", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "Area Force,Planar Force,Planar Load,Area Load,Liquid_pressure,Pressures,Fluid_pressure,Absolute_Pressure,CmHg,Units_of_pressure,Unit_of_pressure,Explosion_pressure,Fluids_and_pressure,Gauge_Pressure,Manometric_unit,Deflagration_pressure,Kinematic_pressure,", 
+        "class": "physical qunatity", 
+        "fb_id": "05wnx", 
+        "name": "Pressure", 
+        "wiki_id": "23619", 
+        "wiki_title": "Pressure"
+    }, 
+    {
+        "UNECE_measure": "permeability, permeability of vacuum, magnetic constant", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Vacuum_Permeability,Relative_Permeability,Magnetic_Permeability,Magnetic_permittivity,Relative_magnetic_permeability,\u039ci,Permeability_(electromagnetism),Magnetic_permeability,Permeability(electromagnetics)", 
+        "class": "physical qunatity", 
+        "fb_id": "038jzf", 
+        "name": "Permeability", 
+        "wiki_id": "754487", 
+        "wiki_title": "Permeability_(electromagnetism)"
+    }, 
+    {
+        "UNECE_measure": "molar heat capacity, molar entropy, molar gas constant", 
+        "UNECE_sector": "Physical Chemistry and Molecular Physics", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj59y", 
+        "name": "Molar heat capacity", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "heat, quantity of heat, energy, thermodynamic energy, enthalpy, Helmholtz function, Helmholtz free energy", 
+        "UNECE_sector": "Heat", 
+        "aliases": "Energisation,Effort,Re-energize,Measurement_of_energy,Energy_(physics),Re-energizations,Reenergizer,Energized_(physics),Energisers,Reenergizes,Re-energiser,Reenergizational,Re-energized,Energise,Physical_energy,Re-energizer,Reenergize,Reenergisers,Energiza", 
+        "class": "physical qunatity", 
+        "fb_id": "02mm_", 
+        "name": "Energy", 
+        "wiki_id": "9649", 
+        "wiki_title": "Energy"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj5hy", 
+        "name": "Catalytic concentration", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "01t_c3g", 
+        "name": "Ratio", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "volumic mass, mass density, density, mass concentration of B, amount of substance, concentration of B", 
+        "UNECE_sector": "Physical Chemistry and Molecular Physics", 
+        "aliases": "Mass density,Denser,Matter_density,G/cm3,Gas_density,Densiti,Densities,Average_density,Density,Mass_Density,Specific_mass,Volumetric_density,Densimetry,Mass_density", 
+        "class": "physical qunatity", 
+        "fb_id": "02btf", 
+        "name": "Density", 
+        "wiki_id": "8429", 
+        "wiki_title": "Density"
+    }, 
+    {
+        "UNECE_measure": "massic energy, specific energy", 
+        "UNECE_sector": "Heat", 
+        "aliases": "Caloric_density,Specific_energy,Energy_to_weight_ratio", 
+        "class": "physical qunatity", 
+        "fb_id": "025s3d7", 
+        "name": "Specific energy", 
+        "wiki_id": "2030045", 
+        "wiki_title": "Specific_energy"
+    }, 
+    {
+        "UNECE_measure": "surface density of charge, electric flux density, displacement electric polarization", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj559", 
+        "name": "Electric flux density", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Amount of substance concentration,Kilomolar,Molar_solution,Attomolar,SCnc,Molar_concentration,Micromolar,How_to_make_a_molar_solution,Yoctomolar,Amount_concentration,Millimolar,Molar_(concentration),Molarity,Zeptomolar,Substance_concentration,Amount_of_sub", 
+        "class": "physical qunatity", 
+        "fb_id": "01pby_", 
+        "name": "Molar concentration", 
+        "wiki_id": "276106", 
+        "wiki_title": "Molar_concentration"
+    }, 
+    {
+        "UNECE_measure": "molar volume", 
+        "UNECE_sector": "Physical Chemistry and Molecular Physics", 
+        "aliases": "Molar_volume,Molar_gas_volume,Mole_volume,Cubic_metre_per_mole,Molal_volume,Cubic_meter_per_mole,Standard_molar_volume", 
+        "class": "physical qunatity", 
+        "fb_id": "0jbyy", 
+        "name": "Molar volume", 
+        "wiki_id": "70989", 
+        "wiki_title": "Molar_volume"
+    }, 
+    {
+        "UNECE_measure": "electric current, magnetic potential difference, magnetomotive force,current linkage", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "Current_(electric),Conventional_current,Electron_current,Current_electricity,Electrical_Conduction,Ion_flow,Electric_current,Conduction_current,Electric_conduction,Conventional_current_flow,Current_(electricity),Amperage,Electrical_conduction_in_gases,Elec", 
+        "class": "physical qunatity", 
+        "fb_id": "01vfy", 
+        "name": "Electric current", 
+        "wiki_id": "6207", 
+        "wiki_title": "Electric_current"
+    }, 
+    {
+        "UNECE_measure": "illuminance", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Luminous_density,Luminous_exitance,Illuminance,Luminous_emittance", 
+        "class": "physical qunatity", 
+        "fb_id": "03bbc3", 
+        "name": "Illuminance", 
+        "wiki_id": "773153", 
+        "wiki_title": "Illuminance"
+    }, 
+    {
+        "UNECE_measure": "radiant energy, fluence rate, radiant exitance, irradiance, first radiation constant", 
+        "UNECE_sector": "Light and Related Electromagnetic Radiations", 
+        "aliases": "Exitance,W/m2,Spectral_irradiance,Irradiancy,Radiant_emittance,Irradiance,Solar_flux_unit,Irradiances,Radiant_exitance,W/m\u00b2,Radiant_flux_density", 
+        "class": "physical qunatity", 
+        "fb_id": "02ps39", 
+        "name": "Irradiance", 
+        "wiki_id": "556970", 
+        "wiki_title": "Irradiance"
+    }, 
+    {
+        "UNECE_measure": "magnetic flux density, magnetic induction, magnetic polarization", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj4g5", 
+        "name": "Magnetic flux density", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "absorbed dose", 
+        "UNECE_sector": "Nuclear Reactions and Ionizing Radiations", 
+        "aliases": "Total_Ionizing_Dose,Radiation_Absorbed_Dose,Radiation_doses,Absorbed_radiation_dose,Dose_rate,Radiation_dose,Absorbed_dose_rate,Radiation-absorbed_dose,Absorbed_dose,Dose_absorbed", 
+        "class": "physical qunatity", 
+        "fb_id": "02r7dt", 
+        "name": "Absorbed dose", 
+        "wiki_id": "571480", 
+        "wiki_title": "Absorbed_dose"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Statistical_data,Data,Scientific_data,Golden_Source_of_data,Data_value", 
+        "class": "Other", 
+        "fb_id": "026sq", 
+        "name": "Data", 
+        "wiki_id": "18985040", 
+        "wiki_title": "Data"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Viscocity,Dynamic_Viscosity,Inviscid_fluids,Eddy_viscosity,Viscous,Pascal_second,Viscous_shear,Viscosity_of_amorphous_materials,Centistokes,Absolute_viscosity,Viscous_Force,Coefficient_of_Viscosity,Viscous_forces,Sutherland's_formula,Coefficient_of_viscosi", 
+        "class": "physical qunatity", 
+        "fb_id": "0b2sz", 
+        "name": "Viscosity", 
+        "wiki_id": "18963754", 
+        "wiki_title": "Viscosity"
+    }, 
+    {
+        "UNECE_measure": "electric field strength", 
+        "UNECE_sector": "Electricity and Magnetism", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj52v", 
+        "name": "Electric field strength", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "solid angle", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Solid_angle_measure,Solid_angles,\u27c0,Solid_angle", 
+        "class": "physical qunatity", 
+        "fb_id": "0nb0h", 
+        "name": "Solid angle", 
+        "wiki_id": "94102", 
+        "wiki_title": "Solid_angle"
+    }, 
+    {
+        "UNECE_measure": "temperature", 
+        "UNECE_sector": "Heat", 
+        "aliases": "Tempurature,Outside_temperature,Air_temperature,Temperature,Temperatures,Absolute_scale_of_temperature,Surface_temperature,Temperature_measure,Temparature,Hottest,Temporature,Static_temperature,Temperture", 
+        "class": "physical qunatity", 
+        "fb_id": "07gr_", 
+        "name": "Temperature", 
+        "wiki_id": "20647050", 
+        "wiki_title": "Temperature"
+    }, 
+    {
+        "UNECE_measure": "repetency, wavenumber", 
+        "UNECE_sector": "Acoustics", 
+        "aliases": "Kayser_(unit),Wave-number,Inverse_Centimeter,Kayser_unit,Repetency,Angular_Wave_Number,Angular_wavenumber,Wave_number,Circular_wavenumber,Wave_Number,Wavenumbers,Wavenumber", 
+        "class": "physical qunatity", 
+        "fb_id": "015xlf", 
+        "name": "Wavenumber", 
+        "wiki_id": "164570", 
+        "wiki_title": "Wavenumber"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "BP,arterial blood pressure,Regulation_of_blood_pressure,Blood-pressure,Leg-arm_index,Systolic_blood_pressure,Blood_pressure_regulation,Venous_pressure,Human_blood_pressure,Auscultatory_blood_pressure_measurement,Diastolic_blood_pressure,Normotensive,Arm-le", 
+        "class": "physical qunatity", 
+        "fb_id": "0fmq1", 
+        "name": "Blood pressure", 
+        "wiki_id": "56558", 
+        "wiki_title": "Blood_pressure"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Nuclear decay,Radioactivity,Solar_influence_on_radioactive_decay,Radioactive_materials,Atomic_Decay,Radioactive_decay_law,Total_activity,Nuclear_Decay,Table_of_radioactive_decay,Atomic_decay,Radio_activity,Decay_mode,Decay_rate,Radioactive_source,Becquerel", 
+        "class": "physical qunatity", 
+        "fb_id": "01c2_0", 
+        "name": "Radioactive decay", 
+        "wiki_id": "197767", 
+        "wiki_title": "Radioactive_decay"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Volume_flow_rate,Volumetric_flow_rate,Volumetric_flow,Rate_of_fluid_flow,Hydraulic_flow,Flow_rate,Rate_of_flow", 
+        "class": "physical qunatity", 
+        "fb_id": "0261x_", 
+        "name": "Volumetric flow rate", 
+        "wiki_id": "418403", 
+        "wiki_title": "Volumetric_flow_rate"
+    }, 
+    {
+        "UNECE_measure": "volume", 
+        "UNECE_sector": "Space and Time", 
+        "aliases": "Volume_of_a_cone,Volumetric,Volume_(unit),Liquid_capacity,Volume_(geometry),Spatial_volume,Volumetry,Fluid_capacity,Volumes,Volume,Volume_(mathematics),Volume_measure", 
+        "class": "physical qunatity", 
+        "fb_id": "07zn0", 
+        "name": "Volume", 
+        "wiki_id": "32498", 
+        "wiki_title": "Volume"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "07155", 
+        "name": "Specific heat capacity", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj542", 
+        "name": "Electric charge density", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Slope_(mathematics),Slope_formula,Slope_of_a_graph,Steepnesses,Steep_(incline),Steeper,Slope,Slopes,Gradient_of_a_line,Steeply,Steepest,X_slope,\u0394y/\u0394x,Rise_over_run,Steepness,Slope_of_a_line,\u2333", 
+        "class": "physical qunatity", 
+        "fb_id": "078hm", 
+        "name": "Slope", 
+        "wiki_id": "29368", 
+        "wiki_title": "Slope"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Bitrate,Data rate,Data transmission rate,Peak_bitrate,Bit_rates,Transfer_rate,Net_Bit_Rate,GBps,Gross_bit_rate,Bit_rate,Line_rate,Bitrate,Gigabit/s,Brate,Information_rate,Bits_per_second,Bit_Rate,Net_bit_rate,Gigabytes_per_second,Net_bitrate,Gross_bitrate,", 
+        "class": "Other", 
+        "fb_id": "01nz4c", 
+        "name": "Data transfer rate", 
+        "wiki_id": "272290", 
+        "wiki_title": "Bit_rate"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "Specific_Gravity,Specific_gravity", 
+        "class": "physical qunatity", 
+        "fb_id": "03bw_hf", 
+        "name": "Specific gravity", 
+        "wiki_id": "427971", 
+        "wiki_title": "Specific_gravity"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_04psy", 
+        "name": "Mass Per Distance", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_02mm_", 
+        "name": "Mass Per Energy", 
+        "wiki_id": "", 
+        "wiki_title": ""
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04gmy", 
+        "name": "Longitude", 
+        "wiki_id": "17617", 
+        "wiki_title": "Longitude"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "094074", 
+        "name": "Latitude", 
+        "wiki_id": "17616", 
+        "wiki_title": "Latitude"
+    }, 
+    {
+        "UNECE_measure": "surface density, areic mass", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "02sj3yy", 
+        "name": "Surface density", 
+        "wiki_id": "759360", 
+        "wiki_title": "Area_density"
+    }, 
+    {
+        "UNECE_measure": "linear density, linear mass", 
+        "UNECE_sector": "Mechanics", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_04psy", 
+        "name": "Linear density", 
+        "wiki_id": "759298", 
+        "wiki_title": "Linear_density"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "Ratio", 
+        "fb_id": "04t9l_04t9l", 
+        "name": "Mass fraction", 
+        "wiki_id": "16351567", 
+        "wiki_title": "Mass_fraction_(chemistry)"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "03plhx", 
+        "name": "Concentration", 
+        "wiki_id": "7512", 
+        "wiki_title": "Concentration"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_0n0j", 
+        "name": "Mass_Per_Surface_Area", 
+        "wiki_id": "", 
+        "wiki_title": "Mass_Per_Surface_Area"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_0n0j_07c_l", 
+        "name": "Mass_Per_Surface_Area_per_Time", 
+        "wiki_id": "", 
+        "wiki_title": "Mass_Per_Surface_Area_per_time"
+    }, 
+    {
+        "UNECE_measure": "", 
+        "UNECE_sector": "", 
+        "aliases": "", 
+        "class": "physical qunatity", 
+        "fb_id": "04t9l_07c_l", 
+        "name": "Mass per Time", 
+        "wiki_id": "", 
+        "wiki_title": "Mass_per_time"
+    }
+]
