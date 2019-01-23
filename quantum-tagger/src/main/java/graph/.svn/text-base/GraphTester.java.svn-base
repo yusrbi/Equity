@@ -1,0 +1,31 @@
+// File: GraphTester.java
+package graph;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import loader.DocumentLoader;
+
+/**
+ * This class is used for testing the implementation of the different graph
+ * representation classes.
+ */
+public class GraphTester {
+
+	private static Logger slogger_ = LoggerFactory.getLogger(GraphTester.class);
+    /**
+     * Shortcut for slogger_.info()
+     */
+//    public static void println(Object o) {
+//        slogger_.info(o);
+//    }
+
+    /**
+     * Sample main function.
+     */
+    public static void main(String[] args) {
+//    	Document doc = DocumentLoader.getTestDocument();
+//    	GraphBuilder builder = new GraphBuilder();    	
+//    	builder.buildGraph(doc, 0, false, true, true);
+    }
+}

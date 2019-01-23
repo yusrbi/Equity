@@ -1,0 +1,14 @@
+  <Configure id='wac' class="org.eclipse.jetty.webapp.WebAppContext">
+  <New id="DS" class="org.eclipse.jetty.plus.jndi.Resource">
+     <Arg></Arg>
+     <Arg>jdbc/postgres</Arg>
+     <Arg>
+         <New class="org.apache.commons.dbcp.BasicDataSource">
+            <Set name="driverClassName">org.postgresql.Driver</Set>
+            <Set name="url">jdbc:postgresql://postgres2.d5.mpi-inf.mpg.de:5432/yibrahim</Set>
+            <Set name="username">yibrahim</Set>
+            <Set name="password">Postgres20!5</Set>
+         </New>
+     </Arg>
+    </New>    
+ </Configure>

@@ -1,0 +1,355 @@
+package annotators;
+
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import annotations.Annotation;
+import annotations.Annotation.ANNOTATION;
+import data.Document_;
+import data.Table_;
+import edu.stanford.nlp.util.Pair;
+import knowledgebase.Units_Measures;
+import utils.DatabaseAccess;
+
+public class AnnotationEnrichment {
+
+	private static Set<String> stopwords;
+	
+	public static void setStopwords(Set<String> stopwords) {
+		AnnotationEnrichment.stopwords = stopwords;
+	}
+
+	public AnnotationEnrichment() {
+		notBreakable = new  LinkedHashSet<String>();
+		notBreakable.add("Name");
+		notBreakable.add("title");
+		notBreakable.add("song title");
+		notBreakable.add("address");
+		notBreakable.add("e-mail");
+		notBreakable.add("round");
+		notBreakable.add("mailing & website");
+		notBreakable.add("website");
+		notBreakable.add("mailing address & website");
+		notBreakable.add("mailing address");
+		notBreakable.add("round");
+		notBreakable.add("Album title");
+		notBreakable.add("book title");
+	}
+
+	Set<String> notBreakable = null;
+	
+	public void process(Document_ document) {
+		String[][] cells = null;
+		Map<Pair<Integer, Integer>, List<Pair<String, Annotation>>> inverted_annotations;
+		Pair<Integer, Integer> temp;
+		List<String> np_ls;
+		Set<String> added_np = new LinkedHashSet<String>();
+		int start = 0, end = 0;
+		int[] indx;
+		String mention;
+		try {
+			StanfordWrapper stanford = StanfordWrapper.getStanfordWrapper();
+			for (Table_ table : document.getTables()) {
+				StringBuilder mentions_list = new StringBuilder();
+				cells = table.getCellsAsArray();
+				inverted_annotations = table.getInverted_annotations();
+				mentions_list.append(process_header(table));
+				for (int i = 1; i < table.getNrow(); i++) {
+					for (int j = 0; j < table.getNcol(); j++) {
+						if(cells[i][j]== null)
+							continue;
+						temp = Pair.makePair(i, j);
+						if ( table.isNumericColumn(j)&& !table.isMixed(j))
+							continue;
+						if(Units_Measures.isNumeric(cells[i][j]))
+							continue;
+						if(cells[0][j].toLowerCase().equals("notes") 
+								|| cells[0][j].toLowerCase().equals("details")
+								|| cells[0][j].toLowerCase().equals("references")
+								|| cells[0][j].toLowerCase().equals("ref")
+								|| cells[0][j].toLowerCase().equals("information")
+								|| cells[0][j].toLowerCase().equals("info"))
+							continue;// do not process notes cell further
+						if(cells[i][j].length() > 100){
+							continue;
+						}
+						else if( notBreakable.contains( cells[0][j].toLowerCase()) && !inverted_annotations.containsKey(temp)){
+							table.addAnnotations(cells[i][j], i, j, 0, cells[i][j].length(), ANNOTATION.ENTITY);
+						}
+						
+						// if (!inverted_annotations.containsKey(temp)) {
+						// check over this condition
+						np_ls = stanford.getNounPhrases(cells[i][j].replace("\"", ""));
+						np_ls.add(cells[i][j].replace("\"", ""));
+						breakDown(np_ls);						
+						added_np.clear();
+						for (String np : np_ls) {
+							np = np.trim();
+							if(isStopwords(np)){
+								continue;
+							}
+							start = cells[i][j].indexOf(np);
+							if (start != -1) {
+								end = start + np.length();
+							} else {
+								indx = find_space_variant_position(np, cells[i][j]);
+								if (indx != null) {
+									start = indx[0];
+									end = indx[1];
+								}
+							}
+
+							if (start != -1) {
+								mention = cells[i][j].substring(start, end);
+								if (added_np.contains(mention)) {
+									continue;
+								}
+								table.addAnnotations(mention, i, j, start, end,
+										ANNOTATION.ENTITY);
+								mentions_list.append("E'" + mention.replace("'", "''") + "',");
+								added_np.add(mention);
+							} else {// do not add
+								System.out.println(
+										"Annotation Enrichment, Could not find: " + np + "in cell" + i + "," + j);
+							}
+
+						}
+						// }
+					}
+				}
+				table.createAnnotatedNERText();
+				DatabaseAccess data_access = DatabaseAccess.getDatabaseAccess();
+				if(mentions_list != null && mentions_list.length() >0)
+					data_access.loadCandidatesFor(mentions_list);
+			}
+			
+		} catch (Exception exc) {
+			exc.printStackTrace();
+		}
+
+	}
+
+	private boolean isStopwords(String np) {
+		for(String word : np.split(" ")){
+			if(!stopwords.contains(word.trim().toLowerCase()))
+				return false;
+		}
+		return true;
+	}
+
+	private StringBuilder process_header(Table_ table) {
+		int row = 0;
+		String mention;
+		String[][] cells = null;
+		Map<Pair<Integer, Integer>, List<Pair<String, Annotation>>> inverted_annotations;
+		Pair<Integer, Integer> temp;
+		List<String> np_ls;
+		Set<String> added_np = new LinkedHashSet<String>();
+		int start = 0, end = 0;
+		int[] indx;
+		cells = table.getCellsAsArray();
+		inverted_annotations = table.getInverted_annotations();
+		List<Pair<String, Annotation>> annotations;
+		StringBuilder header_mentions = new StringBuilder();
+		String header = null;
+		try {
+			StanfordWrapper stanford = StanfordWrapper.getStanfordWrapper();
+			for (int j = 0; j < table.getNcol(); j++) {
+				if (table.isNumericColumn(j)) {
+					// concepts
+					temp = Pair.makePair(row, j);					
+					header = cells[row][j];
+					
+					np_ls = stanford.getNounPhrases(header);
+					np_ls.add(header);
+					breakDown(np_ls);					
+					added_np.clear();
+					if (!inverted_annotations.containsKey(temp)) {
+						annotations = inverted_annotations.get(temp);
+						if (annotations != null) {
+							for (Pair<String, Annotation> annotation : annotations) {
+								added_np.add(annotation.first);
+							}
+						}
+
+					}
+					for (String np : np_ls) {
+						np = np.trim();
+						if(isStopwords(np))
+							continue;
+						start = cells[row][j].indexOf(np);
+						if (start != -1) {
+							end = start + np.length();
+						} else {
+							indx = find_space_variant_position(np, cells[row][j]);
+							if (indx != null) {
+								start = indx[0];
+								end = indx[1];
+							}
+						}
+
+						if (start != -1) {
+							mention = cells[row][j].substring(start, end);
+							if (added_np.contains(mention)) {
+								continue;
+							}
+							table.addAnnotations(mention, row, j, start, end, ANNOTATION.CONCEPT);
+							header_mentions.append("E'" + mention.replace("'", "''") + "',");
+							added_np.add(mention);
+						} else {// do not add
+							System.out.println(
+									"Annotation Enrichment, Could not find: " + np + "in cell" + row + "," + j);
+						}
+					}
+
+				} else {
+					// categories--> do nothing for now,
+					continue;
+				}
+			}
+
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return header_mentions;
+	}
+
+	/*private void breakDown2(List<String> np_ls) {
+		String[] words = null;
+		StringBuilder new_np;
+		List<String> new_np_ls = new LinkedList<String>();
+		for (String np : np_ls) {
+			words = np.split(" ");			
+			for(int i =0; i < words.length-1; i++){
+				new_np = new StringBuilder();
+				new_np.append(words[i]);
+				new_np_ls.add(new_np.toString());
+				for(int j =i+1; j< words.length; j++){
+					new_np.append(" " +words[j]);
+					new_np_ls.add(new_np.toString());
+				}
+			}
+		}
+		np_ls.addAll(new_np_ls);
+	}*/
+	private void breakDown(List<String> np_ls) {
+
+		StringBuilder new_np = new StringBuilder();
+		List<String> new_np_ls = new LinkedList<String>();
+		List<String> temp_np_ls = null;
+		boolean last_delm = false;
+		int index;
+		for (String np : np_ls) {
+			if (np.split(",").length > 1) {
+				for (String st : np.split(","))
+					new_np_ls.add(trim(st));
+			}
+			new_np = new StringBuilder();
+			temp_np_ls = new LinkedList<String>();
+			for (char c : np.trim().toCharArray()) {
+				if (is_delimeter(c)) {
+					// stop and add the np
+					
+					if (new_np.length() > 0 && !last_delm) {
+						new_np_ls.add(trim(new_np.toString()));
+						for(String added_np : temp_np_ls){// for variable starting and ending substrings
+							index = added_np.length();
+							new_np_ls.add(trim(new_np.substring(index)));
+						}
+						temp_np_ls.add(new_np.toString());
+					}
+					last_delm = true;
+				} else {
+					last_delm = false;
+				}
+				new_np.append(c);// continue to get the next token
+			}
+			//add the new_np in case not added --> end of string
+			if (new_np.length() > 0 && !new_np_ls.contains(new_np)) {
+				new_np_ls.add(trim(new_np.toString()));
+				for(String added_np : temp_np_ls){// for variable starting and ending substrings
+					index = added_np.length();
+					new_np_ls.add(trim(new_np.substring(index)));
+				}
+				temp_np_ls.add(new_np.toString());
+			}
+		}
+		np_ls.addAll(new_np_ls);
+	}
+	/*2000 pop (est)
+	 2000 
+	 2000 pop
+	 2000 pop (est*/
+			 
+	private String trim(String string) {
+		int start=0, end=0;
+		string= string.trim();
+		if(string.startsWith("(") && string.endsWith(")")){
+			string = string.substring(1,string.length()-1);
+		}
+		end = string.length()-1;
+		char[] characters = string.toCharArray();
+		while(is_delimeter(characters[start])&& characters[start] !='(' && start < end){
+			start++;
+		}
+		while(is_delimeter(characters[end]) && characters[end] !=')' && end > start){
+			end--;
+		}
+		if(start == end)
+			return "";
+		return string.substring(start,end+1);
+	}
+
+	private boolean is_delimeter(char c) {
+		char[] delimeters = { ' ', '\t', '\n', ',', ';', '.', '/', '?', '-', ']', '[', '{', '}', '(', ')', '\\', '%',
+				'$', '&', '@', '!' };
+		for (char d : delimeters)
+			if (c == d)
+				return true;
+		return false;
+	}
+
+	private int[] find_space_variant_position(String words, String cell) {
+		char[] words_a = words.toCharArray();
+		char[] cell_a = cell.toCharArray();
+		int[] pos = null;
+		int w, c;
+		boolean match = true;
+		for (int i = 0; i < cell_a.length; i++) {
+			if (words_a[0] == cell_a[i]) {
+				w = 1;
+				c = w + i;
+				match = true;
+				while (match && w < words_a.length) {
+					if(c >= cell_a.length){
+						pos=null;
+						break;
+					}
+					if (words_a[w] == cell_a[c]) {
+						w++;
+						c++;
+					} else if (words_a[w] == ' ') {
+						w++;
+					} else {
+						match = false;
+					}
+				}
+				if (match) {
+					pos = new int[2];
+					pos[0] = i;
+					pos[1] = c;
+					break;
+				} else {
+					pos = null;
+				}
+			}
+		}
+		return pos;
+	}
+
+}

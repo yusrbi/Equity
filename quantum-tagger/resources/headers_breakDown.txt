@@ -1,0 +1,109 @@
+new untis 
+
+date	time	duration
+Money
+
+Percentage	Change	Frequency/Rate	
+serial No/ID	
+order/rating/score/count
+Average	/ stats/aggregation(total)	Min/max
+Other
+
+fraction -> percentage 
+fraction -> change 
+fraction -> frequency/rate
+
+Day 
+Month 
+year
+Minute 
+Second
+Hour
+Date -> dimension --> calendar date, [*date]
+Time -> Dimension --> Time
+Duration is not a dimension as it is measured in the time dimension and it is not a unit , thus it is a  measurement, it measures the elapsed time. I will add it to the measurement unit, with Monye_Value
+
+Money
+Currency --> dimension 
+Money_value --> Measurement_unit
+USD --> unit
+
+Rational numbers
+Fractions 1/3
+Ratios 1:3
+Rates --> exchange rates for currency, mortality rate, birth rate, etc [*SPACE*rate]
+Frequency --> 1/time, cyclic event, dimension and measurement unit
+Percentage  ->%
+Change % -> +/- increase decrease 
+
+Real number
+Stats
+Averrage [Avg.|Average]
+Max [Maximum*]
+Min [Min*]
+total 
+aggregations
+ 
+
+Identifiers --> dimension less, unit less
+Serial numbers and orders  --> Dimension less 
+scores/goals/ etc --> dimensionless
+Count, like votes, is dimensionless and unit less 
+
+
+This is about linking a column header to one of the dimensions/measures:
+1- before matching the header to a general wikipedia concept check if it matches a dimension or a dimensionless measure (such as counts, serial no, rank,etc.).
+2- This is different than unit detection as the unit is assigned to a single quantity but the dimension/measure will be assigned to the whole column
+3- the dimension and the unit must accord, which will be imposed on the edge connecting them (candidate-candidate coherence)
+4- A column will be mapped to a dimensionless measures iff no unit is specified in the column.
+5- For statistical terms (such as Max,Min,Avg., mean, change, error, total,etc.) I will handel them as modifiers to the dimension/dimensionless measure. 
+
+	
+One table for the statistical modifiers
+their aliases should be kept as well
+
+Median
+Mode
+Mean
+Total
+Error
+Minimum 
+Maximum 
+Change Percentage 
+
+for the units I will not change anything but for matching thr header I will change the following:
+1- look for a dimension that matches the header -- using the approximate matches -- need to have an identifier 
+2- Look for a dimensionless measure that matches the header --using the approximate matching -- need to have an identifier
+3- Use regexpressions to match them to the following if any:
+Regex
+%
++/-%
+Change % 
+Avg.
+Average
+Min
+Max 
+Error
+
+Date
+Time
+rate
+ratio
+Expenditure
+Cost
+Price
+Count 
+4- look for a match in the concepts list
+
+
+Ratios are dimensionless quantities
+"85";"Ratio";"0m1mr";"Ratio";87837
+
+ID/National ID
+Seial no/ISBN
+count
+score
+rank/order
+telephone number
+
+

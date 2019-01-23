@@ -1,0 +1,77 @@
+[
+    {
+        "aliases": "No,Number,##,Application Number,Item#,Call Number,\u2116,Sr. No,Part Number,#,No.,Num,Round,Channel,Pick #,\u2116,Rnd,Ranking round,Episode #,#1,Nr.,Nr,Code,original code,new code,line no#,line number,Tie No,Cap,App,S/N", 
+        "is_dimensionless": true, 
+        "name": "Number"
+    }, 
+    {
+        "aliases": "Average,Avg.,AVG,min,min.,low,max,max.,heigh,sum,Errors,difference %,% difference,Mean,Median,Mode,Minimum,Maximum,Error,Difference,Agg.,Overall,Points diff,Aggregate,DIFF,Goal Difference,Statistics", 
+        "is_dimensionless": true, 
+        "name": "Statistical"
+    }, 
+    {
+        "aliases": "+/- %,% change,Change %,% (+/-),%+/- ,growth,Increase in,Decrease In,Change percentage,percentage Change,Annual Change,Change (%),% growth ,Chg %,% chg,Decline %,Growth %,% Change Relative to,% Change Since,Change in %,Change in ,Net Change in,\u0394", 
+        "is_dimensionless": false, 
+        "name": "Change"
+    }, 
+    {
+        "aliases": "H,MPG,Length,Frequency,Height,Distance,Snatch (kg),Weight,kW,Area (km\u00b2),Yards,Clean & Jerk (kg),Frequency MHz,Race Distance,Area (km 2 ),MW,Power,Height (m),Area,Weight (lbs.),Length (km),Average Speed (mph),Elevation (m),Distance (km),km,Col (m),W\u2013L,Latitude,Prominence (m),Size,Volume,Longitude,Weight (kg),Prom. (m),Yds,Date (From),Dry Weight (lb),Display size,Daytime Power ( W ),b.p. (\u00b0C),Redline (RPM),Polar axis (m),Area sq versta", 
+        "is_dimensionless": false, 
+        "name": "physical quantity"
+    }, 
+    {
+        "aliases": "Record ID,Feature identifier,site id,GO ID,Ip Address,ISBN,IP,Identifier,ID,Postal code", 
+        "is_dimensionless": true, 
+        "name": "Identifier"
+    }, 
+    {
+        "aliases": "Inns,Kick off Returns,Pts,Score,Points,Result,Goals,Away team score,Home team score,Winning score,Results,Total Points,Total points,NASCAR Nationwide Series results,Pts.,Scores,Winning Score,Points against,Points for,E Score,D Score,Final Score,Points (judges and contestants),Result/Score,Score F\u2013A,Score in Final,Scorers,Olympic results,Goals Against,Score 1,Goals For,Points by Round,Score in final,points,A Score,Scoring Summary,Table points,Final score,Match Results,BITCH PTS,DOG PTS,PTS,points for,hits,extra innings,earned runs,Hits,innings pitched,earned runs,bases on balls,strikeouts,at bat,runs batted in,Holes Played,Thru,Quiz Champ Challenge Result,Challenge Result,Record,Record", 
+        "is_dimensionless": true, 
+        "name": "Score"
+    }, 
+    {
+        "aliases": "Age,Duration,Period,Duration ( dd : hh : mm : ss ),Life Expectancy,Averaging Time", 
+        "is_dimensionless": false, 
+        "name": "Duration"
+    }, 
+    {
+        "aliases": "Attendance,Votes,Wins,Matches,Games,Sets,Population,Laps,Losses,Seats,Runs,Episodes,Seasons,# of Employees,Winners,Passengers,Cuts made,Judges,Election results,Men,Quantity,Total votes,Women,Inhabitants,# Wins,Penalties,Votes per Polling Division,games,Stations,Ties,Numbers,Population (20,Net points,Final records,Dead,International goals,Viewers (in,Ends Lost,Ends Won,Games played,Population (19,Number of episodes,Stolen Ends,total stores,Total Population,Rows,Pens,Qty,Count,Pages,Shots,Students,Read count,Num ratings,Reviews,Runs,Views,Posts,visits,Total,W,L,D,GS,GP,GA,Number of seats,Number of,# of ,candidates,Number of votes,lost,gained,seats lost,seats gained,Net gain/loss,Years Won,Deaths,Births,Pop,played,won,drawn,lost,game played,game played,game started,Pld,Errors,Record ,Countries,human,people,Valves", 
+        "is_dimensionless": true, 
+        "name": "Count"
+    }, 
+    {
+        "aliases": "Revenue,Net income,income,Capital expenditure,Profit,Price,Net Asset,Net Worth,Money,Trade Price,Value of Shares,Annual payroll,Cost,expenditure,Budget,Annual Fee,Expense,Dept,Credit,Credit limit,Cash,Liquidity,Loan,Profit,Loss,Origination Fee,Taxes,Savings,Purchasing power,equity,Member Rate,Non-Member Rate,Flat-Rate Delivery Fee,Checking Rates,Shipping rate,Daily Exclusive rate,Weekend Exclusive rate,Room rate,Sales,Money ($),Spend,Fees,Fee,GDP", 
+        "is_dimensionless": false, 
+        "name": "Monetary"
+    }, 
+    {
+        "aliases": "Nightly Rate,Weekly Rate,Rate,Approximate Day Rate,Overnight Avg Rate,Refund Rate,Interest Rate,Adherence Rate,Bank Interest Rate,Est. Interest Rate,Average Daily Rate ,Success Rate,Sample Rate,Contact Rate,Walk Rate,Annual Rates,Stop Rate,Rates,Drop Rate,Sink Rate,Acceptance Rate,Tax Rate,Savings Rates,FT Rate,Crime Rate Indexes,Rank/Rate,Spin Rate,Annual Death Rate ,Revenue Growth Rate,EPS Growth Rate,Forward Rate of Return,Asset Growth Rate,Unemployment Rate,Base Rate,Daily Rate,Long-Term Capital Gain Rate,Short-Term Capital Gain Rate,Net Investment Income Rate,Foreign Tax Credit Rate,Total Ordinary Income Rate,Run Rate,Strike Rate,Flow Rate,Hourly Rate,Millage Rate,Average Graduation Rate,Growth Rate,Current Rate,Rate of Fire,Crime rate,Average Deaths per Year over rate period,Shipping rate,Tax rate,Response rate,High rate,Low rate,Interest rate,Average rate,Treatment success rate,Admit rate,Maximum shooting rate,Fertility rate,Bit rate,Pass rate,enroll rate,admit rate,Best rate,Transfer rate,Participation rate,VAT rate,Employment rate,Infant mortality rate,Conversion rate,Hourly rate,Initial rate,Estimated abstinence rate,Involvement rate,Real growth rate,Base rate,maximum heart rate,water flow rate,Success rate,Data rate,Daily Exclusive rate,Standard rate,Exchange rate,Economy rate,Millage rate,Discount rate,Interest Rate,Heart rate,Death rate,Total rate,Hires rate,Fine rate,U.S. rate,Purchase rate,Birth rate,Failure rate,grad rate,Annual Death Rate over rate period deaths per 100000", 
+        "is_dimensionless": false, 
+        "name": "Rate"
+    }, 
+    {
+        "aliases": "Rank,Level,Ranking,Cities by population and voter registration,RANK,Rating,Places by population and race,Overall WC points (Rank),Final rank,RATING,Level,rating,Order,Popularity,Average Rating,Avg rating,Patient Ratings,Cities by,Countries by,Region by,Place,Pos,Position,Index", 
+        "is_dimensionless": true, 
+        "name": "Rank/Order"
+    }, 
+    {
+        "aliases": "Ratio,Expense Ratio,Aspect Ratio,Mean Ratio,Current Ratio,Success Ratio,Loss Ratio,Cash to Debt Ratio,Gear Ratio,Payout Ratio,Quick Ratio,Short Ratio,Sloan Ratio,Benefits Ratio,Gross Expense Ratio,Power Ratio,Net Expense Ratio,Comp. Ratio,Compression Ratio,Operating Ratios,Balance Sheet Ratios,Odds Ratio,Win Ratio,Save Ratio,Expense Ratio,Screen Resolution/ Aspect Ratio,Profit Ratios,Power Ratio,Net Expense Ratio (%),Total Recruitment Ratio,Ratio (%),True proteins ratio,Value to weight ratio,Combined ratio", 
+        "is_dimensionless": true, 
+        "name": "Ratio"
+    }, 
+    {
+        "aliases": "Date,Date,Year,Year,Time,Time,Season,From,From,To,To,Week,Week,Date listed,Date listed,Age,First elected,First elected,Years,Years,Death,Death,Birth,Birth,Founded,Founded,Date of birth,Date of birth,Dates,Dates,Launched,Launched,Release date,Release date,Year(s) won,Year(s) won,Commissioned,Commissioned,Duration,Period,Release Date,Release Date,Date of vacancy,Date of vacancy,Original airdate,Original airdate,Date of appointment,Date of appointment,Years Won,Years Won,Established,Established,Time (ET),Time (ET),Completed,Completed,Day,Day,Last match,Last match,Airdate,Airdate,Ended,Ended,Released,Released,Ends,Ends,Time ( h : m : s ),Time ( h : m : s ),Opened,Opened,Elected,Elected,Air date,Air date,Election year,Election year,TIME,TIME,Years won,First broadcast,First broadcast,Event Year,Event Year,Starts,Starts,End date,End date,Winning Years,Winning Years,Yr,Yr,Race Time,Race Time,Date listed/removed,Date listed/removed,Year Joined,Year Joined,Air Date,Air Date,Reaction Time,Reaction Time,Ceased to be Countess,Ceased to be Countess,Adjusted time 2,Adjusted time 2,Combined days,Combined days,Broadcast Date,Broadcast Date,Began,Began,Winning years,Winning years,Date:,Date:,Airing date,Airing date,Mission Dates,Mission Dates,Began airing,Began airing,Duration ( dd : hh : mm : ss ),Opening date of first section,Opening date of first section,born,disappeared,MP Seat,Time,Average Time", 
+        "is_dimensionless": false, 
+        "name": "Temporal"
+    }, 
+    {
+        "aliases": "Percent of ,Percentage of ,% of,% ,(%),percent,percentage, per cent,% of Total,Total %", 
+        "is_dimensionless": true, 
+        "name": "Percentage"
+    }, 
+    {
+        "aliases": "", 
+        "is_dimensionless": false, 
+        "name": "Other"
+    }
+]

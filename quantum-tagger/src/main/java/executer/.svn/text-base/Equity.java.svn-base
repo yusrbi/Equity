@@ -1,0 +1,8 @@
+package executer;
+
+public class Equity {
+
+	public static void disambiguate(String table, String context){
+		
+	}
+}

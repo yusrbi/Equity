@@ -1,0 +1,61 @@
+10
+
+dir
+1
+svn+ssh://yibrahim@contact.mpi-inf.mpg.de/GW/reps-1/work/yibrahim/Equity/src/main/java
+svn+ssh://yibrahim@contact.mpi-inf.mpg.de/GW/reps-1/work/yibrahim/Equity
+
+
+
+2016-08-19T11:27:10.743114Z
+1
+yibrahim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e3b7dc22-25c6-47a1-ac77-581185ff812c
+
+utils
+dir
+
+graph
+dir
+
+executer
+dir
+
+loader
+dir
+
+lsh
+dir
+
+evaluation
+dir
+
+annotators
+dir
+
+data
+dir
+
+resources
+dir
+
+knowledgebase
+dir
+
+annotations
+dir
+
